@@ -1,0 +1,132 @@
+*{
+    padding: 0;
+    margin: 0;    
+    }
+    html,body{
+        font-family: 'Roboto', sans-serif;
+        width: 100%;
+        height: 100%;
+    }
+    .pic-all{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .block-1-1{
+        padding: 4.3% 0;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .img1 {
+        position: relative;
+    }
+    img{
+        height: 620px;
+        width: 500px;
+    }
+    .overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        background-color: rgb(194, 182, 144,0.7);
+        transition: 300ms;
+      }
+      
+    #over:checked ~ .overlay {
+        opacity: 1;
+    }
+    
+    .text{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    
+    .img1 {
+        position: relative;
+    }
+    
+    .image {
+            display: block;
+    }
+    .like{
+        position: absolute;
+        left: 2%;
+        top: 90%;
+    }
+    
+    .fa-heart{
+        opacity:0;
+        filter:alpha (opacity=0); 
+        color: #ff281b;   
+    }
+    
+    .fa-heart-o{
+        opacity:1;
+        filter:alpha (opacity=0);
+    }
+    .hidden{
+        position: absolute;
+        visibility: hidden;
+    }
+    #likey:checked ~ .like i.fa-heart{
+        opacity:4;
+        filter:alpha (opacity=0);
+        float: left;
+    }
+    
+    #likey:checked ~ .like i.fa-heart-o{
+        visibility: hidden;
+    }
+    
+    #resize1{
+        visibility: hidden;
+        top:50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        position: absolute;
+    }
+    #resize1 #menu1{
+        display: flex;
+        flex-direction: row;
+    }
+    
+    #resize1 #menu1 li{
+        list-style: none;
+        padding: 3px;
+    }
+    
+    #resize1 #menu1 li a{
+        text-decoration: none;
+        color: black;
+    }
+    
+    #soc-btn:checked ~ #resize1{
+        z-index: 1;
+        visibility: visible;
+        opacity: 1;
+    }
+    #soc-btn:checked ~ .text{
+        opacity: 0;
+    }
+    
+    #soc-btn:checked ~ i{
+        opacity: 0;
+        visibility: hidden;
+    }
+    .social-menu{
+        position: absolute;
+        right: 2%;
+        top: 90%;
+    }
+    
+     #soc-btn:checked ~ .text{
+        opacity: 0;
+        visibility: hidden;
+    }
